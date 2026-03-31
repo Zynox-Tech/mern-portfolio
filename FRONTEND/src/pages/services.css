@@ -1,0 +1,162 @@
+.services-top h1{
+    font-size: 70px;
+    color:#ffd700;
+    margin:20px;
+    text-transform: capitalize;
+    margin-left: 50px;
+}
+
+
+.services-top p {
+    display: inline-block; /* Make the width depend on content */
+    color: #c6c9d8bf;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2.5s steps(40, end) forwards;
+ text-align: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+        transform: translateX(-50%); /* Start from the center */
+    }
+    to {
+        width: 100%;
+        transform: translateX(0); /* End at the original position */
+    }
+}
+/*  img-text */
+
+.img-txt {
+    width: 500px;
+    height: 300px;
+    aspect-ratio: 1/0.7;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; /* Ensures content doesn't overflow the container */
+}
+
+.img-txt .img-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.img-txt .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.img-txt::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    transition: 0.4s ease-in-out;
+}
+
+.img-txt:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.img-txt:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.contant {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.4s ease-in-out; /* Transition for smooth appearance */
+}
+
+.img-txt:hover .contant {
+    opacity: 1; /* Show text on hover */
+}
+
+.contant h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.contant p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+/* servives- container */
+.services-container {
+    margin: 30px 30px 90px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: auto; /* Adjust height to fit content */
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border: 5px solid #ffd700; /* Solid yellow border */
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+    position: relative; /* For the pseudo-element */
+}
+
+/* Optional: Add a decorative element to the border */
+.services-container::before {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust for position */
+    left: -10px; /* Adjust for position */
+    right: -10px; /* Adjust for position */
+    bottom: -10px; /* Adjust for position */
+    border: 3px dashed #fff; /* Dashed border effect */
+    border-radius: inherit; /* Match the container's border radius */
+    pointer-events: none; /* Prevent interaction */
+    z-index: -1; /* Send the element behind the container */
+}
+/* description */
+.description{
+    width:400px ;
+}
+.description h2{
+    font-size: 30px;
+    font-weight: 600;
+    color:#ffd700;
+    margin-bottom:10px;
+    text-transform: capitalize;   
+}
+.description p{
+    color:#c6c9d8;
+   letter-spacing: 1px;
+   font-size: 1.4rem;
+   margin-bottom: 10px;
+   line-height: 20px;
+   text-transform:capitalize;  
+}
+
+
+
+

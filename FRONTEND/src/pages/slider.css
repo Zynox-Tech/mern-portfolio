@@ -1,0 +1,79 @@
+.heading h1{
+    font-size: 70px;
+    color: #ffd700;
+    text-transform: capitalize;
+    margin: 10px 0 20px 50px;
+}
+.slide-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  
+}
+
+.swiper {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.card-article {
+    width: 600px;
+    height:360px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    position: relative;
+    padding-top: 1.5rem;
+    margin-bottom: -0.75rem;
+}
+
+.card-data {
+    background-color: black;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.img {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.card-name {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 0.75rem;
+}
+
+.card-description {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 1.75rem;
+    color:#c6c9d8bf;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform:capitalize; 
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #ffd700;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffd700;
+}

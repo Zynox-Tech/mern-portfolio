@@ -1,0 +1,139 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #081B29; /* DARK BLUE */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0A192F;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.navbar nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar nav ul li {
+  margin-left: 30px;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: #8892B0;
+  font-size: 18px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #64FFDA;
+  border-bottom: 2px solid #64FFDA;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar nav ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar nav ul li {
+      margin: 10px 0;
+      width: 100%;
+  }
+
+  .navbar nav ul li a {
+      width: 100%;
+      text-align: left;
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  color: #FFFFFF; /* WHITE */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #00FFFF); /* ELECTRIC BLUE */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #00FFFF); /* ELECTRIC BLUE */
+}
+
+@keyframes logo-spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #FFFFFF; /* WHITE */
+  border: 1px solid #FFD700; /* GOLD */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  background-color: #FFD700; /* GOLD */
+  color: #081B29; /* DARK BLUE */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #008080; /* TEAL */
+  color: #FFFFFF; /* WHITE */
+}
+
+button:active {
+  background-color: #00FFFF; /* ELECTRIC BLUE */
+  color: #081B29; /* DARK BLUE */
+}

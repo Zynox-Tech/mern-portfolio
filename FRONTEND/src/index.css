@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+color-scheme:dark;
+ 
+}
+
+:root {
+  --bg-color:black;
+  --btn-color: #ffd700;
+  --white-color: #ffffff;
+  --hover-color: #5db9ee;
+  --gradient-color: linear-gradient(45deg, #ffd700, #000000);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  min-width: 32rem;
+  min-height: 100vh;
+ 
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+p,
+li,
+label,
+input,
+textarea {
+  font-size: 1.4rem;
+  line-height: 1.56;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.06rem;
+}
+
+
+
+/* Home Page */
+.container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 100px 45px 100px;
+}
+
+.mainpic {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin-right: 200px;
+  box-shadow: 0 0 1.5rem #ffffff,
+              inset 0 0 1.5rem #ffffff,
+              0 0 2.5rem #ffd700,
+              inset 0 0 2.5rem #ffd700,
+              0 0 5rem #ffd700,
+              inset 0 0 5rem #ffd700;
+  border: 1rem solid #ffffff;
+}
+
+.main-text .intro {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  color: var(--white-color);
+}
+
+.main-text .intro span {
+  color: var(--btn-color);
+}
+
+.main-text .details {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  max-width: 38rem;
+  margin: 2rem 0 3rem 0;
+}
+button {
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #ffd700;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.btn-main-one {
+  background: var(--btn-color);
+  color: #081b29;
+}
+
+.btn-main-TWO {
+  background: transparent;
+  color: var(--btn-color);
+  margin-left: 2rem;
+}
+
+.btn-main-one:hover {
+  background: transparent;
+  color: var(--btn-color);
+}
+
+.btn-main-TWO:hover {
+  background: var(--btn-color);
+  color: #081b29;
+}
+/* arrow Section */
+.cursor-pointer {
+  background-color: transparent; /* Transparent background */
+  padding: 10px; /* Padding to center the icon */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.cursor-pointer svg {
+  background-color:transparent;
+  width: 30px; /* Adjust icon size */
+  height: 30px;
+  stroke: white; /* White icon */
+  stroke-width: 2;
+}
+
+.cursor-pointer svg path {
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.bg-gray-800 {
+  background-color:transparent; /* Override with a solid background color */
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite; /* Add bounce animation */
+}
+
+.hover\:animate-none:hover {
+  animation: none; /* Remove animation on hover */
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+
+/* Numbers Section */
+.numbers-section {
+  margin: 20px 100px 40px 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 1.5rem #ffffff,
+  inset 0 0 1.5rem #ffffff,
+  0 0 2.5rem #ffd700,
+  inset 0 0 2.5rem #ffd700,
+  0 0 5rem #ffd700,
+  inset 0 0 5rem #ffd700;
+border: 1rem solid #ffffff;
+}
+
+.numbers-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content:center;
+  justify-items: center;
+  align-items: center;
+ 
+}
+
+.div1 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.div1 h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+
+.div1 p {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+/* about section   */
+.about-section {
+  margin: 40px 100px 4cqw 100px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.about-container {
+  background-color: rgba(255, 255, 255, 0.061); 
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.377); 
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container h1 {
+  color:#ffd700;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 3rem;
+}
+
+.about-container p {
+  color:#fff; /* White color for paragraphs */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+}
+/* about section  button  */
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+/* Centering and Resizing the Button */
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight:500;
+  font-size: 1.6rem;
+  overflow: hidden;
+  padding: 1.2rem 2.4rem; /* Increased padding for larger size */
+  position: relative;
+  text-transform: uppercase;
+  margin: 2rem auto; /* Centering the button horizontally */
+}
+
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+/*  end about section  button  */
+
+
+

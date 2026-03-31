@@ -1,0 +1,73 @@
+
+.container {
+    max-width: 140rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+   
+    border-bottom: 0.5px solid white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    padding-left: 50px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  ul {
+    display: flex;
+    gap: 3.8em;
+    list-style: none; /* Remove list bullets */
+    margin: 0; /* Remove default list margins */
+    padding: 0 50px 0 0; /* Remove default list padding */
+    position: relative;
+    justify-content: space-around; /* Adjust as needed */
+
+  }
+  
+  li {
+    font-family: 'Roboto','Montserrat','Open Sans', sans-serif; /* Use Roboto font */
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  .navbar a:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+  
+  .navbar a.active {
+    color: #ffd700;
+  }
+
+
+li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust the distance from the bottom */
+    left:0;
+    width: 100%;
+    height: 2px; /* Adjust the line thickness */
+    background-color: #ffd700; /* Line color */
+    transform:scaleX(0);
+    transform-origin: bottom left;
+    transition: transform .5s; /* Add smooth transition */
+   
+}
+
+li:hover::after {
+    transform:scaleX(1);
+    transform-origin: bottom right;
+}
